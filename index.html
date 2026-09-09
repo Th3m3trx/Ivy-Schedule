@@ -72,7 +72,7 @@ body:has(.screen:target) #home:not(:target){display:none}
 <script>
 function syncHeader(){
  const id=location.hash.slice(1)||"home";
- const titles={home:"Week of Aug 24",messages:"Notifications",favorites:"My Favorites",menu:"Menu"};
+ const titles={home:"Week of Sep 6th",messages:"Notifications",favorites:"My Favorites",menu:"Menu"};
  document.getElementById("head").textContent=titles[id]||titles.home;
  document.querySelectorAll(".nav").forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+id));
  window.scrollTo(0,0);
